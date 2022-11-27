@@ -62,5 +62,5 @@ const FACE_CARDS = ["jack", "queen", "king"];
  */
 export function insertFaceCards(deck) {
   let [first, ...rest] = deck;
-  return [first, "queen", "king", "jack", ...rest];
+  return [first, "jack", "queen", "king", ...rest];
 }
