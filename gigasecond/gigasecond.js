@@ -4,7 +4,8 @@
 //
 
 export const gigasecond = (param1) => {
-  console.log(param1);
-  let date = new Date(param1);
-  return date;
+  const gs = 1e12;
+  let date = new Date(param1).getTime();
+
+  return new Date(date + gs);
 };
