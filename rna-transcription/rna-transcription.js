@@ -3,6 +3,30 @@
 // convenience to get you started writing code faster.
 //
 
-export const toRna = () => {
-  throw new Error('Remove this statement and implement this function');
+export const toRna = (strand) => {
+  let compliments = "";
+
+  compliments.concat("C");
+  for (let letter of strand) {
+    switch (letter) {
+      case "G":
+        compliments = compliments.concat("C");
+        break;
+      case "C":
+        compliments = compliments.concat("G");
+        break;
+      case "T":
+        compliments = compliments.concat("A");
+        break;
+      case "A":
+        compliments = compliments.concat("U");
+
+        break;
+      default:
+        console.log("Triggered default");
+        break;
+    }
+  }
+  // console.log(compliments.concat("C"));
+  return compliments;
 };
