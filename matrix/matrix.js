@@ -16,15 +16,11 @@ export class Matrix {
   }
 
   get columns() {
-    console.log(this.rows);
-    // this.matrixArray[0].map((_, i) => {
-    //   console.log(this.matrixArray[i]);
-    //   this.matrixArray.map((row) => {
-    //     // console.log(row[i]);
-
-    //     row[i];
-    //   });
-    // });
+    return this.matrixArray[0].map((el, i) => {
+      return this.rows.map((row) => {
+        return row[i];
+      });
+    });
 
     // get rows();
   }
